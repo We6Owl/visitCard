@@ -1,7 +1,6 @@
 // import logo from '../img/logo.svg';
 function Advantagecard(link) {
     return (
-        
         <div class="bg-white">
             <p class="text-2xl leading-9 font-medium text-gray-900 text-center">Ключевые навыки</p>
             <section class="w-full mx-auto relative z-10 pb-32 px-4 sm:px-6 lg:px-8" aria-labelledby="contact-heading">

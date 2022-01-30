@@ -1,11 +1,11 @@
 import { AiOutlinePhone, AiFillMail } from 'react-icons/ai';
 import { FaBitbucket } from 'react-icons/fa';
-import Advantagecard from './advantagecar';
+
 function Contentdata(props) {
     return (
     <section class="bg-white overflow-hidden">
       <div class="relative max-w-7xl mx-auto pt-20 pb-12 px-4 sm:px-6 lg:px-8 lg:py-20"> 
-        <div class="relative lg:flex lg:items-center">
+        <div class="relative lg:flex lg:items-center lg:justify-start">
             <div class="hidden lg:block lg:flex-shrink-0">
                 <img class="h-64 w-64 rounded-full xl:h-80 xl:w-80" src={props.photo} alt="" />
                 <div>
@@ -64,7 +64,35 @@ function Contentdata(props) {
                     </footer>
                 </blockquote>
             </div>
-            <Advantagecard></Advantagecard>
+            <div class="relative lg:ml-10">
+              <blockquote class="relative">
+                  <div class="text-2xl leading-9 font-medium text-gray-900">
+                      <p>Ключевые способности</p>
+                      <div class="">
+                          <div class="">
+                              <AiOutlinePhone />
+                              <a href="tel:+79015953544" class="ml-4">+7 (901) 595-35-44</a> 
+                          </div>
+                          <div class="">
+                              <AiFillMail />
+                              <a href="mailto:vladimir.sjj@gmail.com" class="ml-4">vladimir.sjj@gmail.com</a>
+                          </div>
+                          
+                      </div>
+                  </div>
+                  <footer class="mt-8">
+                      <div class="flex">
+                      <div class="flex-shrink-0 lg:hidden">
+                          <img class="h-12 w-12 rounded-full" src={props.photo} alt="" />
+                      </div>
+                      <div class="ml-4 lg:ml-0">
+                          <div class="text-base font-medium text-gray-900">{props.name}</div>
+                          <div class="text-base font-medium text-indigo-600">{props.position}</div>
+                      </div>
+                      </div>
+                  </footer>
+              </blockquote>
+          </div>
         </div>
       </div>
     </section>

@@ -1,5 +1,4 @@
-
-
+import logo from '../img/logo.svg';
 function Footer() {
     return (
         <footer class="">
@@ -9,8 +8,8 @@ function Footer() {
                 &copy; 2004 - 2022, Агентство «Автодрайв»
             </p>
           </div>
-          <div class="mt-8 md:mt-0 md:order-1">
-                <img src="https://tailwindui.com/img/logos/workflow-mark.svg?color=white" alt="logo" />
+          <div class="mt-8 md:mt-0 md:order-1 w-1/3">
+                <img src={logo} alt="logo" />
           </div>
         </div>
       </footer>
